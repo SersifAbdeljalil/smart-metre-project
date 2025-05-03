@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #e9f0f8;
+    --accent-color: #00b894;
+    --text-color: #333;
+    --light-text: #666;
+    --border-color: #ddd;
+    --success-color: #00b894;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fa;
+    color: var(--text-color);
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .main-content {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .sidebar:not(.open) {
+      display: none;
+    }
+  }

@@ -7,7 +7,7 @@ import {
 import StatsCards from './StatsCards';
 import MeterDisplay from './MeterDisplay';
 import History from './History';
-import './Dashboard.css';
+import './UnifiedStyles.css';
 
 const Dashboard = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());

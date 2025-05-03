@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { readingsService } from '../../services/api';
 import { useAlert } from '../../context/AlertContext';
 import StatusBadge from '../common/StatusBadge';
-import './History.css';
+import './UnifiedStyles.css';
 
 const History = ({ limit = 7, showControls = true }) => {
   const [readings, setReadings] = useState([]);

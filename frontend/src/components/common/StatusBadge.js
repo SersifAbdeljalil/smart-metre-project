@@ -1,20 +1,9 @@
 import React from 'react';
-import './StatusBadge.css';
+import '../dashboard/UnifiedStyles.css'; // Assurez-vous que le chemin est correct
 
 const StatusBadge = ({ status, children }) => {
-  const getStatusClass = () => {
-    switch (status) {
-      case 'warning':
-        return 'status-warning';
-      case 'critical':
-        return 'status-critical';
-      default:
-        return 'status-normal';
-    }
-  };
-  
   return (
-    <span className={`status-badge ${getStatusClass()}`}>
+    <span className={`status-badge ${status}`}>
       {children}
     </span>
   );

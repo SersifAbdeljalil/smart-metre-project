@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 import { readingsService } from '../../services/api';
 import { useAlert } from '../../context/AlertContext';
-import './MeterDisplay.css';
+import './UnifiedStyles.css';
 
 const MeterDisplay = ({ deviceId }) => {
   const [reading, setReading] = useState(null);

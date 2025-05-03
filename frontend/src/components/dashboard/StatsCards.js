@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import { readingsService } from '../../services/api';
 import { useAlert } from '../../context/AlertContext';
-import './StatsCards.css';
+import './UnifiedStyles.css';
 
 const StatsCards = () => {
   const [stats, setStats] = useState({
